@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initian-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/d1774c4463.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			TAREK
+        </div>
+		<ul>
+			<li>Home</li>
+			<li>Blog</li>
+			<li>FAQ</li>
+		</ul>
+
+		<section id="search_box_section">
+	  		<input type="text" name="input" placeholder="type something here..." id="searchInput">
+	  		<div class="searchLogo">
+	  			<i class="fa-solid fa-magnifying-glass"></i>
+	  		</div>
+	  		
+	  	</section>
+	</nav>
+	<div class="main">
+		 <div class="image"></div>
+		 <div class="title"><h2>All bad things must come to an end.</h2></div>
+			 
+    </div>
+
+    <form class="signBox">
+    	<h1>Sign In</h1>
+    	<div class="usernameBox">
+    		<span class="icon"><i class="fa-solid fa-user"></i></span>
+    		<input type="text" name="username" placeholder="Enter username">
+    	</div>
+    	<div class="passwordBox">
+    		<span class="icon"><i class="fa-solid fa-lock"></i></span>
+    		<input type="text" name="password" placeholder="Enter password">
+    	</div>
+    	<div class="submitBtn">
+    		<button class="submit">Continue</button>
+    	</div>
+    	<div class="forgotLink">
+    		<a href="#" class="forgotPassword">Forgot password?</a>
+    	</div>
+    </form>
+   
+
+    <script type="text/javascript">
+    	let btn = document.querySelector(".searchLogo");
+	   	let inp = document.querySelector("#searchInput");
+	   	let section = document.querySelector("#search_box_section");
+	   	btn.addEventListener('click', () => {
+	   		if (inp.classList == false && section.classList == false) {
+          inp.classList.add("active");
+          section.classList.add("activeTwo");
+      } else {
+      	inp.classList.remove("active");
+      	section.classList.remove("activeTwo");
+      }
+	   	})
+    </script>
+</body>
+</html>
